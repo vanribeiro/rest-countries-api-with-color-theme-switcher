@@ -1,10 +1,36 @@
 import React from 'react';
+import Header from './../../components/Header';
+import Card from './../../components/Card';
+import SearchBar from './../../components/SearchBar';
+
+import './../../assets/css/main.scss';
 
 function Home() {
     return (
         <div>
-            <h1>Where in the World?</h1>
+            <Header />
+            <SearchBar />
+            <main className="main">
+                <div className="container">
+                    <Card 
+                        population="206,135,883"
+                        region="Americas"
+                        capital="Brasília"
+                    />
+                    <Card 
+                        population="206,135,883"
+                        region="Americas"
+                        capital="Brasília"
+                    />
+                    <Card 
+                        population="206,135,883"
+                        region="Americas"
+                        capital="Brasília"
+                    />
+                </div>
+            </main>
         </div>
+        
     )
 }
 
