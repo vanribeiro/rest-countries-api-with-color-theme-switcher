@@ -1,0 +1,33 @@
+@import 'components/variables.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-family;
+    background-color: $light-mode-background-color;
+    color: $light-mode-text-color;
+    font-size: $home-font-size;
+}
+
+a{
+    text-decoration: none;
+    color: $light-mode-text-color;
+}
+
+strong{
+    font-weight: $font-weight-semi-bold;
+}
+
+.img-fluid{
+    max-width: 100%;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}

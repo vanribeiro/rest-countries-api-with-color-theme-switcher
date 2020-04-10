@@ -27,6 +27,11 @@ function Home() {
                         region="Americas"
                         capital="Brasília"
                     />
+                    <Card 
+                        population="206,135,883"
+                        region="Americas"
+                        capital="Brasília"
+                    />
                 </div>
             </main>
         </div>

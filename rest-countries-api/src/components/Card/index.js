@@ -1,14 +1,17 @@
 import React from 'react';
-
+import countryFlag from './../../assets/images/Brasil.svg';
 import './../../assets/css/components/card.scss';
 
 function Card(props){
     return (
         <section className="card">
-            <header className="header-title">
-                <h1>Brasil</h1>
-            </header>
+        <figure>
+            <img className="img-fluid" src={countryFlag} alt="Brasil"/>
+        </figure>
             <main className="card-content">
+                <header className="header-title">
+                    <h3>Brasil</h3>
+                </header>
                 <p>
                     <strong>Population: </strong>
                     <span>{props.population}</span>

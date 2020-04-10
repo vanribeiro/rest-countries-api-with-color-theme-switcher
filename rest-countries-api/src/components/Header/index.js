@@ -6,18 +6,19 @@ function Header() {
     return (
         <header className="header">
             <div className="container">
-                <div className="title-page">
-                <Link to="/">
-                    <h1>Where in the World?</h1>
-                </Link>
-                    
-                </div>
-                <div className="switcher-button">
-                    <input type="checkbox" name="switcher" id="switcher-btn"/>
-                    <label htmlFor="switcher-btn">
-                    <ion-icon name="moon-outline"></ion-icon>
-                        Dark Mode
-                    </label>
+                <div className="header-row">
+                    <div className="title-page">
+                        <Link to="/">
+                            <h1>Where in the World?</h1>
+                        </Link>
+                    </div>
+                    <div className="switcher-button">
+                        <input type="checkbox" name="switcher" id="switcher-btn" hidden/>
+                        <label htmlFor="switcher-btn">
+                        <ion-icon name="moon-outline"></ion-icon>
+                            Dark Mode
+                        </label>
+                    </div>
                 </div>
             </div>
         </header>

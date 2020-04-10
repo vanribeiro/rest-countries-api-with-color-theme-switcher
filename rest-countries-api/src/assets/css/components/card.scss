@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+
+.card{
+    background-color: $light-mode-elements-color;
+    border-radius: 4px;
+
+    
+    .card-content{
+        padding: 20px;
+
+        .header-title{
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+    }
+
+    img{
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+
+    .card{
+        width: 80%;
+        height: 360px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .main{
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .card{
+            width: 30%;
+            margin-left: 5%;
+        }
+    }
+}

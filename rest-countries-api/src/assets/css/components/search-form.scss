@@ -1,0 +1,62 @@
+@import './variables.scss';
+
+.search-form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+        .search-form-row{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .input-search{
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        input[type="search"], select{
+            font-family: $font-family;
+            color: $light-mode-input-color;
+        }
+
+        input[type="search"]{
+            font-size: $home-font-size;
+            
+            border: 1px solid transparent;
+            height: 42px;
+            width: 70%;
+            background-image: url('./img/search.png');
+            background-color: white;
+            background-position: 13px 13px;
+            background-repeat: no-repeat;
+            padding-left: 40px;
+        }
+
+        select{
+            border: 1px solid transparent;
+            height: 42px;
+            width: 50%;
+        }
+
+        option{
+            border: 1px solid transparent;
+        }
+}
+
+@media only screen and (max-width: 600px){
+
+    .search-form{
+        
+        .search-form-row{
+            flex-direction: column;
+        }
+
+        input[type="search"]{
+            width: 80%;
+        }
+    }
+}
+
+@media only screen and (min-width: 601px){
+
+}

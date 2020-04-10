@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+.header{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $light-mode-elements-color;
+    box-shadow: 1px 1px 5px $light-mode-input-color;
+
+    .header-row{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h1{
+        font-size: $home-font-size;
+    }
+
+    .switcher-button{
+        font-size: $home-font-size;
+        font-weight: $font-weight-semi-bold;
+        
+        ion-icon{
+            margin-right: 5px;
+        }
+    }
+}
