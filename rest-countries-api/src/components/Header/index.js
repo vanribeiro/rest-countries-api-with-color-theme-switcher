@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SwitcherButton from './../SwitcherButton';
 import './../../assets/css/components/header.scss';
 
 function Header() {
@@ -12,13 +13,7 @@ function Header() {
                             <h1>Where in the World?</h1>
                         </Link>
                     </div>
-                    <div className="switcher-button">
-                        <input type="checkbox" name="switcher" id="switcher-btn" hidden/>
-                        <label htmlFor="switcher-btn">
-                        <ion-icon name="moon-outline"></ion-icon>
-                            Dark Mode
-                        </label>
-                    </div>
+                    <SwitcherButton />
                 </div>
             </div>
         </header>

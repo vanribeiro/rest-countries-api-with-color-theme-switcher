@@ -17,11 +17,12 @@
         input[type="search"], select{
             font-family: $font-family;
             color: $light-mode-input-color;
+            border-radius: 6px;
+            box-shadow: 1px 1px 5px $light-mode-input-color;
         }
 
         input[type="search"]{
             font-size: $home-font-size;
-            
             border: 1px solid transparent;
             height: 42px;
             width: 70%;
@@ -59,4 +60,27 @@
 
 @media only screen and (min-width: 601px){
 
+    .search-form{
+
+        .search-form-row{
+            width: 100%;
+
+            .input-search{
+                width: 70%;
+            }
+
+            .select-by-region{
+                width: 15%;
+            }
+        }
+
+        input[type="search"]{
+            width: 50%;
+        }
+
+        select{
+            width: 100%;
+        }
+        
+    }
 }

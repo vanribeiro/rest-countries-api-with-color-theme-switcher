@@ -1,0 +1,23 @@
+@import './../components/variables.scss';
+
+.dark-mode{
+
+    background-color: $dark-mode-background-color;
+
+    .card{
+        background-color: $dark-mode-elements-color;
+    }
+    
+    .header{
+        background-color: $dark-mode-background-color;
+    }
+
+    .search-form{
+        
+        input[type="search"]{
+            background-image: url('./img/search.png');
+            background-color: $dark-mode-elements-color;
+        }
+    }
+
+}
