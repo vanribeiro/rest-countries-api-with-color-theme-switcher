@@ -1,4 +1,8 @@
-@import './../components/variables.scss';
+@import './../../../assets/css/components/variables.scss';
+
+.header{
+    background-color: $dark-mode-background-color;
+}
 
 .dark-mode{
 
@@ -7,15 +11,11 @@
     .card{
         background-color: $dark-mode-elements-color;
     }
-    
-    .header{
-        background-color: $dark-mode-background-color;
-    }
 
     .search-form{
         
         input[type="search"]{
-            background-image: url('./img/search.png');
+            background-image: url('./../../../assets/css/components/img/search.png');
             background-color: $dark-mode-elements-color;
         }
     }
