@@ -1,28 +1,19 @@
 import React from 'react';
-import './themes/dark.scss';
 
+/**
+ * Van Ribeiro, please, read this tutorial: 
+ * https://medium.com/@jasonlmcaffee/theming-with-react-and-sass-c7a6882fd26b
+ */
 
 function SwitcherButton(){
-    let switcherClass = "switcher-btn";
 
-    function handleSwitcherButton(event) {
-        const value = event.target;
-        if(value.checked === true){
-            document.body.style.backgroundColor = "#000000";
-            console.log('claro');
-        } else{
-            document.body.style.backgroundColor = "#efefef";
-            console.log('escuro');
-        }
-    }
     return (
         <div className="switcher-button">
-            <input className={switcherClass} 
-            onChange={handleSwitcherButton}
+            <input 
             type="checkbox" 
             name="switcher" 
             id="switcher-btn"
-                hidden
+            hidden
             />
 
             <label  htmlFor="switcher-btn">
