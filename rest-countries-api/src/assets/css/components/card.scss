@@ -1,24 +1,38 @@
 @import './variables.scss';
 
+.main__countries{
 
-.card{
-    background-color: $light-mode-elements-color;
-    border-radius: 4px;
+    .container{
+        display: flex;    
+        flex-wrap: wrap;
+    }
 
-    
-    .card-content{
-        padding: 20px;
+        .card{
+            background-color: $light-mode-elements-color;
+            box-shadow: 1px 1px 8px #595959;
+            border-radius: 8px;
+        
+            
+            .card-content{
+                padding: 20px;
+        
+                .header-title{
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+                }
+            }
 
-        .header-title{
-            padding-top: 5px;
-            padding-bottom: 10px;
+            figure{
+                overflow: hidden;
+            }
+        
+            img{
+                display: block;
+                height: inherit;
+                border-top-right-radius: 8px;
+                border-top-left-radius: 8px;
+            }
         }
-    }
-
-    img{
-        border-top-right-radius: 8px;
-        border-top-left-radius: 8px;
-    }
     
 }
 
@@ -32,17 +46,28 @@
     }
 }
 
-@media only screen and (min-width: 768px){
-    .main{
-
+@media only screen and (min-width: 600px){
+    .main__countries{
         .container{
-            display: flex;
-            justify-content: space-between;
-        }
+            justify-content: space-evenly;
+            
+            .card{
+                width: 25%;
+                margin: 16px;
+            }
 
-        .card{
-            width: 30%;
-            margin-left: 5%;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .main__countries{
+        .container{
+            .card{
+                width: 20%;
+                margin: 16px;
+            }
+
         }
     }
 }

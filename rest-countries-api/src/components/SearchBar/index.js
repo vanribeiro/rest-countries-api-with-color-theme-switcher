@@ -1,7 +1,8 @@
 import React from 'react';
-import './../../assets/css/components/search-form.scss'
+import './../../assets/css/components/search-form.scss';
 
-function SearchBar() {
+function SearchBar({ handleDynamicSearch }) {
+
     return (
         <form className="search-form">
             <div className="container">
@@ -11,6 +12,7 @@ function SearchBar() {
                         name="search" 
                         id="search-country"
                         placeholder="Search for country..."
+                        onKeyUp={handleDynamicSearch}
                         />
                     </div>
                     <div className="select-by-region">
