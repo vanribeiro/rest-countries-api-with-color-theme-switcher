@@ -11,7 +11,7 @@ function Select({ filter }) {
 
     function handleOption(event){
         const selectedOption = event.target.id;
-        console.log(event.target)
+        console.log(event.target);
         // setOption(event.target.getAttribute('id'));
         filter(option);
     }
