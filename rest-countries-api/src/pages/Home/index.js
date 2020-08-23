@@ -7,37 +7,27 @@ import './index.scss';
 
 function Home() {
     const [countries, setCountries] = useState([]);
-    function findAll () {
-        fetch(`${URL}/all`)
-            .then(async (response) => {
-                const data = await response.json();
-                setCountries(data);
-            });
+    // function findAll () {
+    //     fetch(`${URL}/all`)
+    //         .then(async (response) => {
+    //             const data = await response.json();
+    //             setCountries(data);
+    //         });
+    // }
+
+    function findByRegion(event) {
+        console.log(event)
     }
 
-    // function findCountryByName(countryName) {
-    //     fetch(`${URL}/name/${countryName}`)
-    //     .then(async (response) => {
-    //         const answer = await response.json();
-    //         setCountries(answer);
-    //     });
-    // }
 
     useEffect(() => {
-        findAll();
-        // findCountryByName();
+        // findAll();
     }, []);
-
-
-    // function handleDynamicSearch(event) {
-    //     findCountryByName(event.target.value);
-    //     countries.map((country) => console.log(country.name));
-    // }
     
     return (
         <div>
             <Header />
-            <SearchBar />
+            <SearchBar onChange={findByRegion}/>
             <main className="main__countries">
                 <div className="container">
                     {

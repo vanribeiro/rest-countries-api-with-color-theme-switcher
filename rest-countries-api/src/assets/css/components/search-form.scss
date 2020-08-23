@@ -33,15 +33,6 @@
             padding-left: 40px;
         }
 
-        select{
-            border: 1px solid transparent;
-            height: 42px;
-            width: 50%;
-        }
-
-        option{
-            border: 1px solid transparent;
-        }
 }
 
 @media only screen and (max-width: 600px){
@@ -68,18 +59,10 @@
             .input-search{
                 width: 70%;
             }
-
-            .select-by-region{
-                width: 15%;
-            }
         }
 
         input[type="search"]{
             width: 50%;
-        }
-
-        select{
-            width: 100%;
         }
         
     }

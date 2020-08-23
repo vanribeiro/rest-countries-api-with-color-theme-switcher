@@ -1,8 +1,12 @@
 import React from 'react';
+import Select from './Select';
 import './../../assets/css/components/search-form.scss';
 
 function SearchBar({ handleDynamicSearch }) {
 
+    function filterByRegion (option) {
+        console.log(option);
+    }
     return (
         <form className="search-form">
             <div className="container">
@@ -15,16 +19,7 @@ function SearchBar({ handleDynamicSearch }) {
                         onKeyUp={handleDynamicSearch}
                         />
                     </div>
-                    <div className="select-by-region">
-                        <select name="filter" id="filter-by-region">
-                            <option>Filter By Region</option>
-                            <option value="Africa">Africa</option>
-                            <option value="America">America</option>
-                            <option value="Asia">Asia</option>
-                            <option value="America">Europe</option>
-                            <option value="Oceania">Oceania</option>
-                        </select>
-                    </div>
+                    <Select filter={(option) => filterByRegion(option)} />
                 </div>
             </div>
         </form>

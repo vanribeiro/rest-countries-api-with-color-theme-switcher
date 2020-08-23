@@ -1,0 +1,40 @@
+@import './../../../assets/css/components/variables.scss';
+
+@mixin selectMenu {
+    box-shadow: 1px 1px 5px #cacaca;
+    background-color: $light-mode-elements-color;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.select-by-region{
+
+    ul{
+        list-style: none;
+        width: 190px;
+        font-size: 0.95em;
+        font-weight: bold;
+    }
+
+    li[role="heading"]{
+        @include selectMenu();
+        margin-bottom: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .list-none{
+        display: none;
+    }
+
+    .list-items{
+        @include selectMenu();
+        padding: 8px 0px;
+    }
+    
+    .list-items li, li[role="heading"]{
+        padding: 12px 24px;
+    }
+
+}
